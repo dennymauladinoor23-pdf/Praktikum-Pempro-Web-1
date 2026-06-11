@@ -3,29 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Document</title>
+    <title>DennyMauladinoor_2510817310012</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            background-color: #ffffff;
+        }
+        
+        /* Mengubah warna dasar navbar abu-abu default menjadi putih bersih tanpa border */
+        .navbar-default {
+            background-color:#e3e2e2;
+            border: none;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 0;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 22px;
+            color: #000000 !important;
+        }
+        .navbar-nav li a {
+            color: #444444 !important;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            background: transparent;
+            border: 1px solid #ebd9d9;
+            color: #999999;
+            border-radius: 10px;
+            padding: 5px 20px;
+            margin: 0 6px;
+            font-size: 11px;
+            transition: all 0.2s;
+        }
+        
+        /* Hero Section Teks di Tengah */
+        .hero-section {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        .hero-section h2 {
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .hero-section h4 {
+            font-weight: bold;
+            color: #222222;
+            margin-bottom: 15px;
+        }
+        .hero-section .text-muted {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #c0c0c0;
+            text-transform: uppercase;
+        }
+        
+        /* Kustomisasi gaya tombol agar membulat elips tipis */
+        .filter-buttons {
+            margin-top: 80px;
+            margin-bottom: 5px;
+        }
+        
+        .btn-custom {
+            background: transparent;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .btn-custom:hover {
+            background: transparent;
+            border: 1px solid #ebd9d9;
+            color: #999999;
+            border-radius: 20px;
+            padding: 5px 20px;
+            margin: 0 6px;
+            font-size: 11px;
+            transition: all 0.2s;
+        }
+        
+        /* Mengatur kerapatan dan jarak kotak gambar */
+        .gallery-container {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .gallery-col img {
+        max-width: 80%;      /* Mengubah ukuran gambar menjadi lebih kecil (80% dari lebar kolom) */
+        height: auto;        /* Memastikan tinggi gambar menyesuaikan secara proporsional */
+        margin: 0 auto;      /* KUNCI: Membuat posisi gambar yang sudah diperkecil tetap di tengah */
+        display: block;      /* Wajib ada agar margin: 0 auto bisa bekerja dengan sempurna */
+        margin-bottom: 10px; /* Menambahkan jarak bawah antar gambar */
+        }
+    </style>
 </head>
 <body>
+
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">JPhotography</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-    <li class="active"><a href="#">HOME</a></li>
-    <li><a href="#">QUOTE ME</a></li>
-    <li><a href="#">PORTFOLIO</a></li>
-    <li><a href="#">CONTACT</a></li>
-</ul>
-            <div class="row">
-                <div class="col-md-6">
-                </div>
-                <div class="col-md-6">
-                </div>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            </div>
+    </nav>
+
+    <div class="container text-center hero-section">
+        <h2>Hi, Hello.. I Am JohnDas...!</h2>
+        <h4>I Travel Around The World To Get The Best Photos.!</h4>
+        <p class="text-muted">AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER</p>
+        
+        <div class="filter-buttons">
+            <button class="btn btn-custom">All</button>
+            <button class="btn btn-custom">Landscape</button>
+            <button class="btn btn-custom">Portrait</button>
+            <button class="btn btn-custom">Product</button>
+        </div>
+    </div>
+
+    <div class="container-fluid gallery-container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 gallery-col">
+                <img src="suna.jpg" class="img-responsive" alt="Foto 1">
+            </div>
+            <div class="col-sm-3 col-xs-12 gallery-col">
+                <img src="suna.jpg" class="img-responsive" alt="Foto 2">
+            </div>
+            <div class="col-sm-3 col-xs-12 gallery-col">
+                <img src="suna.jpg" class="img-responsive" alt="Foto 3">
+            </div>
+            <div class="col-sm-3 col-xs-12 gallery-col">
+                <img src="suna.jpg" class="img-responsive" alt="Foto 4">
             </div>
         </div>
-    </nav>
+    </div>
+    
+    <footer class="text-center">
+    <div class="container">
+        <p>
+        <strong>JPhotography</strong>
+        </p>
+        <p>Copyright 2024. All Rights Reserved</p>
+        <!-- Social Icons pakai Glyphicons -->
+        <span class="glyphicon glyphicon-envelope"></span>
+        <span class="glyphicon glyphicon-camera"></span>
+        <!-- Tambahkan social icons lainnya -->
+    </div>
+    </footer>
 </body>
 </html>
