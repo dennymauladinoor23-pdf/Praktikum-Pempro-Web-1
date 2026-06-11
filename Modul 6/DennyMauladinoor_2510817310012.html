@@ -7,72 +7,92 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
             font-family: "Playfair Display", "Times New Roman", serif;
             background-color: #ffffff;
         }
         
-        /* Mengubah warna dasar navbar abu-abu default menjadi putih bersih tanpa border */
         .navbar-default {
-            background-color:#e3e2e2;
+            background-color:#ededed;
             border: none;
             padding-top: 20px;
             padding-bottom: 10px;
             margin-bottom: 0;
         }
         .navbar-brand {
+            padding-top: 7px;
+            padding-left: 56px;
             font-weight: bold;
-            font-size: 22px;
+            font-size: 28px;
             color: #000000 !important;
         }
+        
+        .navbar-nav li.active a {
+            border-color: #000000;
+            color: #000000;
+            font-weight: bold;
+            background-color: transparent;
+            box-shadow: none;
+
+        }
+
         .navbar-nav li a {
             color: #444444 !important;
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 1.5px;
             background: transparent;
-            border: 1px solid #ebd9d9;
+            border: 1px solid #ededed;
             color: #999999;
             border-radius: 10px;
             padding: 5px 20px;
+            padding-top: 7px;
             margin: 0 6px;
             font-size: 11px;
             transition: all 0.2s;
         }
         
-        /* Hero Section Teks di Tengah */
         .hero-section {
-            padding-top: 40px;
-            padding-bottom: 20px;
+            padding-top: 56px;
+            padding-bottom: 21px;
         }
         .hero-section h2 {
             font-weight: bold;
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 12px;
         }
         .hero-section h4 {
+            font-size: 21px;
             font-weight: bold;
             color: #222222;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         .hero-section .text-muted {
-            font-size: 11px;
+            font-size: 12px;
             letter-spacing: 3px;
             color: #c0c0c0;
-            text-transform: uppercase;
         }
         
-        /* Kustomisasi gaya tombol agar membulat elips tipis */
         .filter-buttons {
             margin-top: 80px;
-            margin-bottom: 5px;
+            margin-bottom: 0px;
         }
         
+        .btn-custom.active {
+            border-radius: 20px;
+            border-color: #000000;
+            color: #000000;
+            font-weight: bold;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
         .btn-custom {
             background: transparent;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 21px;
+            padding-right: 21px;
         }
 
         .btn-custom:hover {
@@ -86,18 +106,43 @@
             transition: all 0.2s;
         }
         
-        /* Mengatur kerapatan dan jarak kotak gambar */
         .gallery-container {
             padding-left: 5px;
             padding-right: 5px;
         }
-        .gallery-col img {
-        max-width: 80%;      /* Mengubah ukuran gambar menjadi lebih kecil (80% dari lebar kolom) */
-        height: auto;        /* Memastikan tinggi gambar menyesuaikan secara proporsional */
-        margin: 0 auto;      /* KUNCI: Membuat posisi gambar yang sudah diperkecil tetap di tengah */
-        display: block;      /* Wajib ada agar margin: 0 auto bisa bekerja dengan sempurna */
-        margin-bottom: 10px; /* Menambahkan jarak bawah antar gambar */
+        .gallery-col {
+            padding-left: 7px;
+            padding-right: 7px;
+            margin-bottom: 21px;
         }
+        .gallery-col img {
+            width: 100%;
+            height: 180px;
+        }
+
+        .fa-brands {
+            margin-top: 30px;
+            font-size: 20px;
+            color: #999999;
+        }
+
+        footer {
+            margin-top: 70px;
+            margin-bottom: 60px;
+        }
+
+        footer strong {
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        footer .text-muted {
+            font-size: 12px;
+            margin-top: 1px;
+            margin-bottom: 28px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -122,41 +167,87 @@
         <p class="text-muted">AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER</p>
         
         <div class="filter-buttons">
-            <button class="btn btn-custom">All</button>
-            <button class="btn btn-custom">Landscape</button>
-            <button class="btn btn-custom">Portrait</button>
-            <button class="btn btn-custom">Product</button>
+            <button class="btn btn-custom text-muted active">All</button>
+            <button class="btn btn-custom text-muted">Landscape</button>
+            <button class="btn btn-custom text-muted">portrait</button>
+            <button class="btn btn-custom text-muted">Product</button>
         </div>
     </div>
 
     <div class="container-fluid gallery-container">
         <div class="row">
-            <div class="col-sm-3 col-xs-12 gallery-col">
-                <img src="suna.jpg" class="img-responsive" alt="Foto 1">
+            <div class="col-md-3 gallery-col">
+                <img src="angel_of_delusion.jpg" class="img-responsive" alt="Foto 1">
             </div>
-            <div class="col-sm-3 col-xs-12 gallery-col">
-                <img src="suna.jpg" class="img-responsive" alt="Foto 2">
+            <div class="col-md-3 gallery-col">
+                <img src="angel_of_delusion.jpg" class="img-responsive" alt="Foto 2">
             </div>
-            <div class="col-sm-3 col-xs-12 gallery-col">
-                <img src="suna.jpg" class="img-responsive" alt="Foto 3">
+            <div class="col-md-3 gallery-col">
+                <img src="angel_of_delusion.jpg" class="img-responsive" alt="Foto 3">
             </div>
-            <div class="col-sm-3 col-xs-12 gallery-col">
-                <img src="suna.jpg" class="img-responsive" alt="Foto 4">
+            <div class="col-md-3 gallery-col">
+                <img src="angel_of_delusion.jpg" class="img-responsive" alt="Foto 4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 gallery-col">
+                <img src="astra_nomical_moment.png" class="img-responsive" alt="Foto 1">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="astra_nomical_moment.png" class="img-responsive" alt="Foto 2">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="astra_nomical_moment.png" class="img-responsive" alt="Foto 3">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="astra_nomical_moment.png" class="img-responsive" alt="Foto 4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 gallery-col">
+                <img src="miyabi.jpg" class="img-responsive" alt="Foto 1">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="miyabi.jpg" class="img-responsive" alt="Foto 2">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="miyabi.jpg" class="img-responsive" alt="Foto 3">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="miyabi.jpg" class="img-responsive" alt="Foto 4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 gallery-col">
+                <img src="zhu-yuan.webp" class="img-responsive" alt="Foto 1">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="zhu-yuan.webp" class="img-responsive" alt="Foto 2">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="zhu-yuan.webp" class="img-responsive" alt="Foto 3">
+            </div>
+            <div class="col-md-3 gallery-col">
+                <img src="zhu-yuan.webp" class="img-responsive" alt="Foto 4">
             </div>
         </div>
     </div>
     
     <footer class="text-center">
-    <div class="container">
-        <p>
-        <strong>JPhotography</strong>
-        </p>
-        <p>Copyright 2024. All Rights Reserved</p>
-        <!-- Social Icons pakai Glyphicons -->
-        <span class="glyphicon glyphicon-envelope"></span>
-        <span class="glyphicon glyphicon-camera"></span>
-        <!-- Tambahkan social icons lainnya -->
-    </div>
+        <div class="container">
+            <p>
+                <strong>JPhotography</strong>
+            </p>
+            <p class="text-muted">© Copyright 2026. All Rights Reserved</p>
+            <div>
+            <i class="fa-brands fa-dribbble" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-behance" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-instagram" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-500px" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-flickr" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-facebook-f" style="margin: 0 10px; cursor: pointer;"></i>
+            <i class="fa-brands fa-twitter" style="margin: 0 10px; cursor: pointer;"></i>
+        </div>
     </footer>
 </body>
 </html>
